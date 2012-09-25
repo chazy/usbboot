@@ -86,7 +86,7 @@ int usb_boot(usb_handle *usb, int fastboot_mode,
 		fprintf(stderr,"waiting for 2ndstage response...\n");
 		usb_read(usb, &msg_size, sizeof(msg_size));
 		if (msg_size != 0xaabbccdd) {
-			fprintf(stderr,"unexpected 2ndstage response\n");
+			fprintf(stderr,"unexpected 2ndstage response: %#08x\n", msg_size);
 			return -1;
 		}
 

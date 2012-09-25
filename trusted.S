@@ -1,3 +1,4 @@
+.arch_extension sec
 .global call_trusted
 
 call_trusted:

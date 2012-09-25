@@ -39,8 +39,8 @@ what_to_build:: all
 
 TOOLCHAIN ?= arm-eabi-
 
-BOARD ?= panda
-ARCH ?= omap4
+BOARD=omap5evm
+ARCH=omap5
 
 TARGET_CC := $(TOOLCHAIN)gcc
 TARGET_LD := $(TOOLCHAIN)ld
